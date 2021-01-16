@@ -9,10 +9,14 @@ class PostsController < ApplicationController
     @post = Post.new(post_params)
     @post.user = current_user
     if @post.save
-      redirect_to @post
+      redirect_to action: 'index'
     else
       render 'new'
     end
+  end
+
+  def index
+    @posts = Post.all
   end
 
   private
