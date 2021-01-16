@@ -1,5 +1,5 @@
-<%= form_with do |form| %>
-  <%= form.label :post, "Write a post!" %>
+<%= form_with model: @post do |form| %>
+  <%= form.label "Write a post!" %>
   <%= form.text_area :post %>
   <%= form.submit "Post it!" %>
 <% end %>
