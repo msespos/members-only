@@ -5,3 +5,4 @@
     <%= post.user.email %><br>
   <% end %>
 <% end %>
+<%= button_to "logout", destroy_user_session_path, method: :delete  %>
