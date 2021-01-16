@@ -1,4 +1,7 @@
 <h1>All of the posts</h1>
 <% @posts.each do |post| %>
-  Post: <%= post.body %><br>
+  <%= post.body %>
+  <% if current_user %>
+    <%= post.user.email %><br>
+  <% end %>
 <% end %>
