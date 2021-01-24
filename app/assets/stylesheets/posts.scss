@@ -1,3 +1,19 @@
 // Place all the styles related to the Posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+body {
+  background-color: rgb(153, 171, 224);
+  color: rgb(252, 28, 84);
+  text-align: center;
+}
+
+.post-text {
+  color: rgb(22, 28, 84);
+}
+
+.post-box {
+  width: 300px;
+  border: 15px solid green;
+  padding: 20px;
+  margin: auto;
+}

@@ -1,9 +1,14 @@
 <h1>All of the posts</h1>
-<% @posts.each do |post| %>
-  <%= post.body %>
-  <% if current_user %>
-    <%= post.user.email %><br>
+<div class="post-text">
+  <% @posts.each do |post| %>
+    <div class="post-box">
+      <%= post.body %>
+      <% if current_user %>
+        <br><%= post.user.email %>
+      <% end %>
+      <br><br>
+    </div>
   <% end %>
-<% end %>
+</div>
 <%= button_to "login", new_user_session_path %>
 <%= button_to "logout", destroy_user_session_path, method: :delete  %>
