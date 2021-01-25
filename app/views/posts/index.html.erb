@@ -11,6 +11,7 @@
   <% @posts.each do |post| %>
     <div class="post-box">
       <%= post.body %>
+      <%= time_ago_in_words(post.created_at) %>
       <% if current_user %>
         <%= post.user.email %>
       <% end %>
