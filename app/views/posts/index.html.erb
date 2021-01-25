@@ -12,9 +12,8 @@
     <div class="post-box">
       <%= post.body %>
       <% if current_user %>
-        <br><%= post.user.email %>
+        <%= post.user.email %>
       <% end %>
-      <br><br>
     </div>
   <% end %>
 </div>
