@@ -1,9 +1,36 @@
 // Place all the styles related to the Posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+.header {
+  padding: 10px 50px 0px 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-buttons{
+  display: flex;
+}
+
+.button {
+  background-color: #362f55;
+  border-radius: 100px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.username {
+  padding: 25px 0px 0px 50px;
+  font-size: 46px;
+  font-weight: bold;
+}
+
 h1 {
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 88px;
+
 }
 
 body {
