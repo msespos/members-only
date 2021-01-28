@@ -2,9 +2,10 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 .header {
-  padding: 10px 50px 0px 50px;
+  padding: 10px 0px 0px 0px;
   display: flex;
   justify-content: space-between;
+  margin: 0px 75px 0px 75px;
 }
 
 .header-buttons{
@@ -22,7 +23,7 @@
 }
 
 .username {
-  padding: 25px 0px 0px 50px;
+  padding: 10px 0px 0px 50px;
   font-size: 46px;
   font-weight: bold;
 }
@@ -30,7 +31,7 @@
 h1 {
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 88px;
-
+  margin: 20px 0px 50px;
 }
 
 body {
