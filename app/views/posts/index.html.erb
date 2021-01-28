@@ -1,12 +1,3 @@
-<% unless current_user %>
-  <%= button_to "login", new_user_session_path, method: :get %>
-  <%= button_to "sign up", new_user_registration_path, method: :get %>
-<% end %>
-<% if current_user %>
-  <%= current_user.username %>
-  <%= button_to "logout", destroy_user_session_path, method: :delete  %>
-  <%= button_to "make a new post", new_post_path, method: :get %>
-<% end %>
 <h1>All of the posts</h1>
 <div class="post-boxes-container">
   <% @posts.each do |post| %>
