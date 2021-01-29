@@ -1,3 +1,7 @@
+<div class="just-back-button-header">
+    <%= button_to "back to posts", root_path, method: :get, class:"button" %>
+</div>
+
 <h2>Log in</h2>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
@@ -15,7 +19,5 @@
     <%= f.submit "Log in" %>
   </div>
 <% end %>
-
-<%= link_to "posts", root_path %>
 
 <%= render "devise/shared/links" %>
