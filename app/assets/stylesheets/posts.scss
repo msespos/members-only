@@ -1,11 +1,24 @@
 // Place all the styles related to the Posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
-.header {
+.index-header-not-logged-in {
+  padding: 10px 0px 0px 0px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 120px 0px 120px;
+}
+
+.index-header-logged-in {
   padding: 10px 0px 0px 0px;
   display: flex;
   justify-content: space-between;
   margin: 0px 75px 0px 75px;
+}
+
+.just-back-button-header {
+  padding: 10px 0px 0px 0px;
+  margin: 0px 75px 0px 75px;
+  display: flex;
 }
 
 .header-buttons{
@@ -13,6 +26,17 @@
 }
 
 .button {
+  background-color: #362f55;
+  border-radius: 100px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+input[type=submit] {
   background-color: #362f55;
   border-radius: 100px;
   color: white;
@@ -32,7 +56,7 @@
 h1 {
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 88px;
-  margin: 20px 0px 50px;
+  margin: 10px 0px 50px;
 }
 
 body {
