@@ -19,11 +19,17 @@
 <div class="post-boxes-container">
   <% @posts.each do |post| %>
     <div class="post-box">
-      <%= post.body %>
-      <%= time_ago_in_words(post.created_at) %>
-      <% if current_user %>
-        <%= post.user.username %>
-      <% end %>
+      <div class="username-in-post-box">
+        <% if current_user %>
+          <%= post.user.username %>
+        <% end %>
+      </div><br>
+      <div class="body-in-post-box">
+        "<%= post.body %>"
+      </div><br>
+      <div class="timestamp-in-post-box">
+        <%= time_ago_in_words(post.created_at) %>
+      </div>
     </div>
   <% end %>
 </div>
