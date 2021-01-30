@@ -54,7 +54,6 @@ input[type=submit] {
 }
 
 h1 {
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 88px;
   margin: 10px 0px 50px;
 }
@@ -114,4 +113,15 @@ body {
 
 .label {
   font-size: 30px;
+}
+
+.form-text {
+  font-size: 25px;
+}
+
+.form-field {
+  width: 20%;
+  height: 30px;
+  font-size: 30px;
+  margin: 25px 0px 25px;
 }
