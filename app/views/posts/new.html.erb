@@ -2,8 +2,8 @@
     <%= button_to "back to posts", root_path, method: :get, class:"button" %>
 </div>
 
-<%= form_with model: @post do |form| %>
-  <%= form.label "Write a post!" %>
-  <%= form.text_area :body %>
-  <%= form.submit "Post it!" %>
+<%= form_with model: @post, class:"post-form" do |form| %>
+  <%= form.label "Write a post!", class:"label" %>
+  <%= form.text_area :body, class:"text-area" %>
+  <%= form.submit "Post it!", class:"submit" %>
 <% end %>
